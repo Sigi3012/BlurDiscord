@@ -14,10 +14,13 @@
 </p>
 Blurs Discord when you press |
 
+## Requirements
+
+https://betterdiscord.app/
+
 ## Potential future additions
 * Modifiable keybind
 * Changable blur strength
-* Modifiable keybind
 
 Sorted from top to bottom in importance
 
