@@ -2,7 +2,7 @@
  * @name BlurDiscord
  * @author Sigi
  * @description Blurs discord when you press |
- * @version 0.0.3
+ * @version 0.0.4
  */
 
 module.exports = class BlurDiscord {
@@ -30,10 +30,13 @@ module.exports = class BlurDiscord {
 
   toggleBlur() {
     this.isBlurred = !this.isBlurred;
+    const body = document.body;
     if (this.isBlurred) {
-      document.body.style.filter = "blur(25px)";
+      body.style.transition = "filter 0.2s ease-out"; 
+      body.style.filter = "blur(10px)";
     } else {
-      document.body.style.filter = "none";
+      body.style.transition = "filter 0.2s ease-in"; 
+      body.style.filter = "none";
     }
   }
 }
